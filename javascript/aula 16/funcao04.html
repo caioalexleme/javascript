@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando fatorial</title>
+    <link rel="shortcut icon" href="../../html/html-css/exercícios/des010/desafio005/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Digite um número e descubra seu fatorial x!</h1>
+    <p><input type="number" name="num" id="num"></p>
+    <p><input type="button" value="verificar" value="verificar()" onclick="verificar()"></p>
+    
+<script>
+        
+        let num = (document.querySelector('input#num'))
+        
+        function fatorial(num){
+            let fat = 1
+            for(num = Number(num.value); num>1; num--){
+            fat*=num
+        }
+        return fat   
+    }
+        
+
+        function verificar(){
+            alert(fatorial(num))
+        }
+
+</script>
+
+
+</body>
+</html>

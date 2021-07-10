@@ -1,0 +1,39 @@
+body{
+    font: normal 15pt arial;
+    background:  rgba(255, 141, 100, 0.726);
+}
+
+header{
+text-align: center;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size: 20pt;
+color: white;
+}
+
+section{
+margin: auto;
+background:white;
+padding: 15px;
+width: 60%;
+border-radius: 12px;
+
+}
+input{
+    font-size: 12pt;
+    border-radius: 7px;
+    padding: 3px 7px;
+    margin-left: 2px;
+}
+select{
+    padding: 3px;
+    font-size: 12pt;
+    
+}
+
+footer{
+text-align: center;
+color: white;
+font-style: italic;
+font-size: 20pt;
+
+}

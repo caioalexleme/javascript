@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de peso</title>
+    
+</head>
+<body>
+    <h1>Calculo de peso</h1>
+    <p><input type="text" name="nome" id="nome" placeholder="Nome completo"></p>
+    <p>Sexo:
+        <input type="radio" name="sexo" id="mas" checked><label for="mas">Masculino</label>
+        <input type="radio" name="sexo" id="fem"><label for="fem">Feminino</label>
+    </p>
+    <p><input type="number" name="peso" id="peso" placeholder="Qual seu peso?"></p>
+    <p>Caso você engorde: <input type="number" name="gordo" id="gordo"></p>
+    <p><input type="button" value="Verificar" onclick="verificar()"></p>
+    
+    <div id="res"></div>
+
+    <script>
+     function verificar(){
+     res = document.querySelector('div#res')
+     
+     amigo = {nome: document.getElementById('nome').value, kg: Number(gordo.value), peso: Number(peso.value), sexo: document.getElementsByName('sexo'), engordar(p=0){
+         amigo.peso = amigo.peso + p
+         
+     }
+    }
+     if(amigo.sexo[0].checked){
+         amigo.sexo = 'Masculino'
+     }else{
+         amigo.sexo = 'Feminino'
+     }
+     
+     res.innerHTML = `Nome: ${amigo.nome}, seu sexo é :'${amigo.sexo}' seu peso é: ${amigo.peso}Kg`
+     amigo.engordar(amigo.kg)
+     res.innerHTML += `<br> Caso você engorde ${amigo.kg}Kg, seu peso será: ${amigo.peso}Kg` 
+      
+    }
+
+    </script>
+    
+</body>
+</html>
+

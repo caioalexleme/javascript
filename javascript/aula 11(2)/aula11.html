@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação</title>
+    <link rel="shortcut icon" href="../../html/html-css/exercícios/des010/desafio005/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Descubra se você ja pode votar</h1>
+    <p><input type="number" name="idade" id="idade" placeholder="Digite a sua idade"></p>
+    <p><input type="button" value="Consultar" onclick="consultar()"></p>
+    <div id="res"></div>
+
+    <script>
+
+        function consultar(){
+            var idade = document.querySelector('input#idade')
+            var idadee = Number(idade.value)
+
+            if(idadee<16){
+                res.innerHTML = `Você tem ${idadee} anos.`
+                res.innerHTML += 'Não vota'}
+                else if(idadee<18 || idadee>=65){
+                    res.innerHTML = `Você tem ${idadee} anos.`
+                    res.innerHTML += 'Voto opcional'
+                }else{
+                    res.innerHTML = `Você tem ${idadee} anos.<br>`
+                    res.innerHTML += 'Voto obrigatório'
+                }
+            }
+        
+    </script>
+</body>
+</html>

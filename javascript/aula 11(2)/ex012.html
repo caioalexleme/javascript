@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de horas</title>
+    <link rel="shortcut icon" href="../../html/html-css/exercícios/des010/desafio005/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <h1>Olá tudo bem?</h1>
+    <input type="button" value="ok" onclick="ok()">
+    <div id="res"></div>
+
+
+    <script>
+        function ok(){
+
+            var n1 = new Date()
+            var n11 = n1.getHours()
+
+            if (n11<5){
+                    res.innerHTML = 'Boa madrugada'                
+            }else if(n11<=12){
+                res.innerHTML = 'Bom dia'
+            }else if(n11<18){
+                res.innerHTML = 'Boa tarde'
+            }else if(n11<24){
+                res.innerHTML = 'Boa noite'
+            }else if(n11>=24){
+                res.innerHTML = 'Digite a hora correta'
+            }
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>

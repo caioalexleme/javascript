@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetor Array</title>
+</head>
+<body>
+    <h1>Vetor Array: let num = [8,6,9,5,4,7]</h1>
+    <p><input type="button" value="Verificar valores de posições no vetor" onclick="verificar()"></p>
+    <p><input type="button" value="Número de posições do vetor" onclick="np()"></p>
+    <p><input type="button" value="Alterar Valor '9' na posição '2' pelo valor '3'" onclick="alterar()"></p>
+    <p><input type="button" value="Exibir o valor da posição '3'" onclick="p3()"></p>
+    <p><input type="button" value="Inserir uma nova posição com o valor '2'" onclick="insert()"></p>
+    <p><input type="button" value="Ordenar os valores nas posições do menor para o maior" onclick="ordenar()"></p>
+    <p><input type="button" value="Exibir valores nas suas respectivas posições" onclick="pos()">
+    <p><input type="number" name="txtn" id="txtn" placeholder="Descubra em qual posição está algum valor" style="width: 300px;">
+    <input type="button" value="Verificar" onclick="pv9()"></p>
+    </p> 
+    <script>
+        let num = [8,6,9,5,4,7]
+
+        function verificar(){
+            document.write(`<h1>valores = [${num}]<br>posição = [0,1,2,3,4,5]</h1>`)
+        }
+
+        function np(){
+            document.write(`<h1>O vetor 'num' tem ${num.length} posições.</h1>`)
+        }
+
+        function alterar(){
+            document.write(`<h1>${num}</h1><br>`)
+            num[2] = 3
+            document.write(`<h1>${num}<h1>`)
+        }
+
+        function p3(){
+            document.write(`<h1>[x,x,x,${num[3]},x,x]</h1>`)
+        }
+
+        function insert(){
+            document.write(`<h1>${num}</h1>`)
+            num.push(2)
+            document.write(`<h1>${num}</h1>`)
+        }
+        function ordenar(){
+            document.write(`<h1>${num}</h1>`)
+            document.write(`<h1>${num.sort()}</h1>`)
+        }
+        function pos(){
+
+            document.write(`<h1>${num}</h1>`)
+            
+            for(let pos = 0; pos<num.length; pos++){
+                document.write(`<h1>A posição ${pos} tem o valor ${num[pos]}<br></h1>`)
+            }
+            for(let pos in num){      //Maneira mais simplificada. Mesmo resultado de cima. Usando 'for in'
+               document.write(`<strong>A posição ${pos} tem o valor ${num[pos]}<br></strong>`)
+            }
+        }
+        function pv9(){
+         let txtn = document.getElementById('txtn')
+         let n1 = Number(txtn.value)
+         if(num.indexOf(n1) == -1){ // '-1' indica que o valor não foi encontrado em nenhuma posição do vetor 'num'
+             alert('Valor não encontrado')
+         }else{
+             document.write(`<h1>O valor digitado está na posição: ${num.indexOf(n1)}</h1>`)// Procurar em qual posição está algum valor usando 'indexOf(VALOR DESEJADO)'
+         }
+        }
+        
+    </script>
+</body>
+</html>

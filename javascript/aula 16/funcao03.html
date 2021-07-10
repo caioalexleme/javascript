@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função 03</title>
+    <link rel="shortcut icon" href="../../html/html-css/exercícios/des010/desafio005/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Adicionando função à variável</h1>
+    <h2>Digite um número e ele será automaticamente multiplicado por 2</h2>
+    <input type="number" name="num" id="num">
+    <input type="button" value="Multiplicar por 2" onclick="mult()">
+
+    <script>
+
+        let num = document.querySelector('input#num')
+        //let n1 = Number(num.value)
+
+        let v = function(x){
+            return x * 2
+        }
+        
+        function mult(){
+        alert(v(Number(num.value)))    
+            
+        }
+
+    </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>função 02</title>
+    <link rel="shortcut icon" href="../../html/html-css/exercícios/des010/desafio005/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Não funcionou do jeito certo seguindo o 'funcao2.JS'(x)</h1>
+    <h2>Função soma</h2>
+    <p><input type="number" name="n1" id="n1"  placeholder="Digite um número"> + 
+    <input type="number" name="n2" id="n2" placeholder="Digite outro número">
+    <input type="button" value="Somar" onclick="somar()"></p>
+    <div id="res"></div>
+
+    <script>
+        
+            let nn1 = document.getElementById('n1')
+            let nn2 = document.querySelector('input#n2')
+            //let n11 = Number(nn1.value)
+            //let n22 = Number(nn2.value)
+            
+            function soma(n1=0,n2=0){
+            return n1 + n2
+        }
+         
+            function somar(){
+                res.innerHTML = `${soma(n1=Number(nn1.value),n22=Number(nn2.value))}`
+            }
+            
+                
+            
+        
+        
+        
+    
+    </script>
+</body>
+</html>

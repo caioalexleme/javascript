@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <link rel="shortcut icon" href="../../html/html-css/exercícios/des010/desafio005/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p><input type="text" name="pais" id="pais"></p>
+    <p><input type="button" value="Verificar" onclick="verificar()"></p>
+    <div id="res"></div>
+
+    <script>
+        
+        
+        function verificar(){
+            
+            var p = document.getElementById('pais')
+            var pa = String(p.value)
+            if(pa=='Brasil' || pa=='brasil' || pa=='BRASIL'){
+                alert('Você é brasileiro')
+            }else{
+                alert('Você é estrangeiro')
+            }
+
+}
+
+    </script>
+
+</body>
+</html>

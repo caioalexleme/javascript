@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando While</title>
+    <link rel="shortcut icon" href="../../html/html-css/exercícios/des010/desafio005/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Aperte o botão</h1>
+    <p><input type="button" value="Testar" onclick="teste()"></p>
+
+    <script>
+        
+        function teste(){
+            var test = 1
+
+            //Condição 'while': "(enquanto) a 'var test' estiver <=6 adicione (1):
+            while(test<=6){ 
+            document.write(`passo ${test}`+ '<br>')
+            test++
+        }
+        
+        test = 1 //add (1) de novo na variável 'test'
+
+        //Condição 'do while' MESMO RESULTADO: "adicione (1) na 'var test', (enquanto) for <= que 6 :
+        do{  
+            document.write(`<ins>passo ${test}</ins>` + '<br>')
+            test++
+        }while(test<=6)
+    }
+        
+    </script>
+
+</body>
+</html>

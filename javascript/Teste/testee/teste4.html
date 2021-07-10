@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de peso</title>
+    <link rel="shortcut icon" href="../../html/html-css/exercícios/des010/desafio005/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Calculo de peso</h1>
+    <p><input type="text" name="nome" id="nome" placeholder="Nome completo"></p>
+    <p>Sexo:
+        <input type="radio" name="sexo" id="mas" checked><label for="mas">Masculino</label>
+        <input type="radio" name="sexo" id="fem"><label for="fem">Feminino</label>
+    </p>
+    <p><input type="number" name="peso" id="peso" placeholder="Qual seu peso?"></p>
+    <p><input type="button" value="Verificar" onclick="verificar()"></p>
+    <div id="res"></div>
+
+    <script>
+        function verificar(){
+    
+            let amigo = {nome: String(nome.value), peso: Number(peso.value)}
+	        let sexo = document.getElementsByTagName('sexo')
+	        let genero = ''
+            if(sexo[0].checked){
+            genero = 'Masculino'
+            
+            }else{
+            genero = 'Feminino'
+            }
+
+        alert(`Seu nome é ${amigo.nome}, do sexo: '${genero}'. Seu peso é ${amigo.peso}Kg.`) 
+            
+    }
+    
+    </script>
+    
+</body>
+</html>
+

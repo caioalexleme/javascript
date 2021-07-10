@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando "for"</title>
+    <link rel="shortcut icon" href="../../html/html-css/exercícios/des010/desafio005/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Vamos testar o 'for' e o 'Operador Ternário'</h1>
+    <input type="button" value="Testar o for" onclick="testar()"><br>
+    <input type="number" name="nota" id="nota" max="10" min="0" placeholder="Digite sua nota" style="width: 150px;">
+    <input type="button" value="Ver classificação usando operador ternário" onclick="nota()">
+    <div id="res"></div>
+
+    <script>
+
+        function testar(){
+            for(var c = 1;c<=10; c++){
+                res.innerHTML += `passo ${c}<br>`
+            }
+
+        }
+         
+function nota(){
+         
+            var media = document.getElementById('nota')
+            var nota = Number(media.value)
+            nota < 7 ? alert('Reprovado') : alert('Aprovado') //"se" 'nota' <7 (? condição true) (:condição false)
+media.value = ''
+media.focus()
+
+        }
+    </script>
+    
+</body>
+</html>

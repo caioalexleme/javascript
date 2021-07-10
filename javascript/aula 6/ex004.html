@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../../html/html-css/exercícios/des010/desafio005/favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = prompt('Qual o seu nome')
+        document.write(`Olá <strong>${nome}</strong>. Seu nome tem ${nome.length} letras. <br>`)//número de letras
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`) //exibe tudo em maiúsculas
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase() }<br>`) //exibe tudo em minúsculas
+        
+        var n1 = 1545.5
+        document.write(n1.toFixed(2) + '<br>') //insere  dois números após a vírgula
+
+        document.write(n1.toFixed(2).replace('.',',')+'<br>') // converte '.' para ','
+
+    document.write(n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})+'<br>')//Converte o valor para Real R$
+    document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})+'<br>')//Converte o valor para Dólar
+    document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})) //Converte o valor para Euro  
+
+    </script>
+</body>
+</html>

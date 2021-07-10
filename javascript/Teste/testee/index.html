@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    
+</head>
+<body>
+    
+    <input type="number" name="anum" id="bnum">
+    <input type="button" value="ok" onclick="calcular()">
+    <input type="button" value="idoso" onclick="verificar()">
+    <input type="button" value="idosa" onclick="idosa()">
+   
+    <section>
+    <img id="foto">
+    </section>
+   <div id="res"></div>
+    
+   
+   
+   <script>
+        function calcular(){
+        var n1 = document.querySelector('input#bnum')
+        var n11 = Number(bnum.value) + 3
+        alert(n11 + 1)
+    }
+
+    function verificar(){
+        
+var img = document.getElementById('foto')
+img.src = 'idoso.png'
+        
+    }
+    function idosa(){
+        
+        var res = document.getElementById('res')
+        var img = document.createElement('img')
+        img.setAttribute('id', 'imagem')
+        
+        if(idosa.apply){
+            img.setAttribute('src', 'idosa.png')
+            
+        }
+        
+        res.appendChild(img)
+    }
+
+    let amigo = {nome: String(nome.value)}
+    </script>
+</body>
+</html>
